@@ -14,7 +14,7 @@ function App() {
   };
 
   const getRandomImage = () => {
-    const images = ['space1.jpg', 'space2.jpg', 'space3.jpg', 'space4.jpg', 'space5.jpg', 'space6.jpg', 'space7.jpg'];
+    const images = ['space1.jpg', 'space2.jpg', 'space3.jpg', 'space4.jpg', 'space5.jpg', 'space7.jpg', 'space8', 'space9', 'space10'];
     const randomIndex = Math.floor(Math.random() * images.length);
     return images[randomIndex];
   };
