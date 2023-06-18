@@ -18,15 +18,27 @@
   justify-content: center;
   justify-items: center;
   grid-template-areas: "header" "main";
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 
-
-
 }
+
+.button-container {
+  margin-bottom: 10px
+}
+
+
+.phrase-change-button {
+  color: black;
+  /* Otros estilos del botón */
+}
+
+
+
+
 
 
 

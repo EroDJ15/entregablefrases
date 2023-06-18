@@ -4,6 +4,7 @@ import dbQuotes from './db/quote.json';
 import { getRandom } from './utils/random';
 import { useState, useEffect } from 'react';
 
+
 function App() {
   const [quote, setQuote] = useState(getRandom(dbQuotes));
   const [randomImage, setRandomImage] = useState('');
@@ -27,7 +28,17 @@ function App() {
     <main className='app' style={{ backgroundImage: `url("images/${randomImage}")`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', height: '100vh' }}>
       <section className='app__container'>
         <h1>Space Phrases</h1>
-        <QuoteBox handleChangequote={handleChangeQuote} phrase={quote.phrase} />
+        <div className='quote-box-container'>
+          <div className='button-container'>
+            <button className='phrase-change-button' onClick={handleChangeQuote}>
+              <img src="/images/search-regular-24.png" alt="buscar" />
+            </button>
+
+          </div>
+          <div className='quote-box'>
+            <QuoteBox phrase={quote.phrase} />
+          </div>
+        </div>
         <footer>
           <div>
             <h3>Author: {quote.author}</h3>
@@ -39,3 +50,6 @@ function App() {
 }
 
 export default App;
+
+
+

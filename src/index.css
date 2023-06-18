@@ -6,16 +6,36 @@ html {
 *,
 * ::after,
 *::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-  line-height: 1.5;
+  font-family: 'Roboto bold', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  align-items: center;
   color: white;
   text-decoration: none;
 
+
 }
+
+.quote-box {
+  background-color: rgba(37, 37, 38, 0.316);
+  /* Fondo con 30% de opacidad */
+  box-shadow: 2px 2px 4px rgba(3, 3, 3, 0.5);
+  /* Sombra con desplazamiento y opacidad */
+  border-radius: 20px;
+  /* Redondear los bordes */
+}
+
+
+.quote-box button {
+  border: 20px;
+  color: black;
+  transition: color 0.10s ease;
+  /* Agrega más estilos según tus necesidades */
+}
+
 
 body {
   margin: 0;

@@ -1,15 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 const QuoteBox = ({ phrase, handleChangequote }) => {
   return (
     <section>
-      <button style={{ color: 'black', transition: 'color 0.10s ease' }} onClick={handleChangequote}>Phrase Change</button>
+      <div>
+        <button className="phrase-change-button" onClick={handleChangequote}>
 
-      <article>
-        <p>{phrase}</p>
-      </article>
+        </button>
+      </div>
+
+      <div>
+        <article>
+          <p>{phrase}</p>
+        </article>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default QuoteBox
+export default QuoteBox;
