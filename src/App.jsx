@@ -41,11 +41,29 @@ function App() {
         </div>
         <footer>
           <div>
+
             <h3>Author: {quote.author}</h3>
+            <h4 className='flex flex-col items-center mt-auto py-4 bg-primary dark:text-cyan-50 '>
+              <p className="dark:text-cyan-50 text-xs font-semibold text-center">
+                &copy; 2023 Todos los derechos reservados
+              </p>
+              <a
+                href="https://github.com/EroDJ15"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="dark:text-cyan-50 text-xs font-semibold flex items-center mt-0 p-2">
+                Created by: Jerovic Pino
+              </a>
+
+            </h4>
           </div>
         </footer>
+
       </section>
+
     </main>
+
+
   );
 }
 
